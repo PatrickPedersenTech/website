@@ -1138,14 +1138,3 @@ iframe {
     border-color: initial;
     border-image: initial;
 }
-
-#signUpButton {
-    color: #000000;
-    text-decoration: none;       
-}
-
-#loginButton {
-    color: #000000;
-    padding: 0 1em;
-    text-decoration: none;
-}
