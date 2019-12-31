@@ -1,5 +1,6 @@
-        <?php
-        include 'links.php';
+        
+        <?php 
+        include $_SERVER['DOCUMENT_ROOT'].'/website/redirects/socialLinks.php'
         ?>
         
         <!-- START: Top Contacts -->

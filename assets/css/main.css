@@ -1000,24 +1000,20 @@ ul li ul:hover {
 }
 
 .styled {
-    font-family: Raleway;
-    font-weight: lighter;
-    color:gray;
-    font-size: 40px;
+    font-weight: bold;
     margin: 10px;
     padding:20px;
     padding-left:100px;
-    background-color: aliceblue;
-    background-image: url("./assets/images/css.png");
+    background-color: #171e22;
+    background-image: url("../images/css.png");
     background-repeat: no-repeat;
-    background-size: 80px 80px;
-    transition: all 1s;
+    background-size: 0px 0px;
+    transition: all 0.5s;
 }
 
 .styled:hover{
-    background-color: black;
     color:white; 
-    background-size: 40px 40px;
+    background-size: 70px 70px;
 }
 
 .center {

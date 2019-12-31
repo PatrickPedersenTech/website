@@ -32,7 +32,7 @@
     
     <!-- END: Styles -->
 
-    <title>Forside</title>
+    <title>R18 Patrick</title>
     <link rel="shortcut icon" type="image/png" href="assets/images/GlobeLight.png"/>
 </head>
 <body>
