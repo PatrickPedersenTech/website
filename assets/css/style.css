@@ -8,12 +8,56 @@ body {
 }
 
 .container {
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    margin-top: 40vh;
+    margin-top: 25vh;
 }
 
 .content {
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h1 {
+    margin-bottom: 1rem;
+}
+
+.content .description, .content .description p {
+    margin: 0;
+}
+
+.content .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.emoji {
+    font-size: 8rem;
+    margin-bottom: -2rem;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+.social a {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.social a:hover {
+    color: #00adb5;
+}
+
+.social a img {
+    width: 2rem;
+    height: 2rem;
+    align-self: center;
+    padding-right: 0.5rem;
 }
