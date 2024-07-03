@@ -1,0 +1,25 @@
+<div class="header">
+    <div class="emoji">🤔</div>
+        <h1>{{site.title}}</h1>
+        <div class="description">
+            {{ site.description | newline_to_br | markdownify | remove: "<p>" | remove: "</p>" }}
+        </div>
+        
+        <div class="social">
+            {% assign sm = site.social_links %}
+            {% for entry in sm %}
+            {% assign key = entry | first %}
+            <a href="{{ sm[key].url }}" target="_blank" rel="noopener noreferrer" title="{{ sm[key].platform }}">
+                <img src="/assets/img/{{ sm[key].platform }}.svg" alt="{{ sm[key].platform }}">
+                <p>{{ sm[key].platform }}</p>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="scroll-down">
+    <a href="#skills">
+        <img src="/assets/img/down-arrow.svg" alt="Scroll down">
+    </a>
+</div>
+{% include footer.html %}

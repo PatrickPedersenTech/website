@@ -1,0 +1,17 @@
+<div class="skills">
+    <h2>Platforms</h2>
+    <div class="container">
+        {% assign platform = site.platforms %}
+        {% for entry in platform %}
+        {% assign key = entry | first %}
+        <div class="card">
+            <div class="card-image">
+                <img src="/assets/img/{{ platform[key].image }}" alt="{{ platform[key].name }}">
+            </div>
+            <div class="card-title">
+                <h3>{{ platform[key].name }}</h3>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

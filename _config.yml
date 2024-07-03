@@ -1,29 +1,11 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
 title: 'Patrick Pedersen'
 email: 'github@patrickpedersen.tech'
 description: "Contemplating my next project...\nor maybe I should just finish the ones I've already started."
 url: "https://patrickpedersen.tech"
 github_username: 'PatrickPedersen'
 
+# Socials
 social_links:
   github:
     platform: GitHub
@@ -32,10 +14,102 @@ social_links:
     platform: LinkedIn
     url: 'https://www.linkedin.com/in/patrick-j-s-pedersen/'
 
+# languages
+languages:
+  typescript:
+    name: TypeScript
+    image: typescript-color.svg
+  python:
+    name: Python
+    image: python-color.svg
+  php:
+    name: PHP
+    image: php-color.svg
+  powershell:
+    name: PowerShell
+    image: powershell-color.svg
+  bash:
+    name: Bash
+    image: bash-color.svg
+  terraform:
+    name: Terraform
+    image: terraform-color.svg
+
+
+# Tools
+tools:
+  git:
+    name: Git
+    image: git-color.svg
+  github:
+    name: GitHub
+    image: github-color.svg
+  github_actions:
+    name: GitHub Actions
+    image: githubactions-color.svg
+  azure_devops:
+    name: Azure DevOps
+    image: azuredevops-color.svg
+  nodejs:
+    name: Node.js
+    image: nodejs-color.svg
+  vscode:
+    name: Visual Studio Code
+    image: vscode-color.svg
+  pycharm:
+    name: PyCharm
+    image: pycharm-color.svg
+  intellij:
+    name: IntelliJ IDEA
+    image: intellijidea-color.svg
+  phpstorm:
+    name: PhpStorm
+    image: phpstorm-color.svg
+  sonarqube:
+    name: SonarQube
+    image: sonarqube-color.svg
+  postman:
+    name: Postman
+    image: postman-color.svg
+  
+# Monitoring
+monitoring:
+  prometheus:
+    name: Prometheus
+    image: prometheus-color.svg
+  grafana:
+    name: Grafana
+    image: grafana-color.svg
+  loki:
+    name: Loki
+    image: loki-color.png
+
+# Platforms
+platforms:
+  azure:
+    name: Microsoft Azure
+    image: azure-color.svg
+  windows:
+    name: Windows
+    image: windows-color.svg
+  docker:
+    name: Docker
+    image: docker-color.svg
+  kubernetes:
+    name: Kubernetes
+    image: kubernetes-color.svg
+  rockylinux:
+    name: Rocky Linux
+    image: rockylinux-color.svg
+  fedora:
+    name: Fedora
+    image: fedora-color.svg
+  archlinux:
+    name: Arch Linux
+    image: archlinux-color.svg
+
 # Build settings
-remote_theme: pages-themes/minimal@v0.2.0
 plugins:
-  - jekyll-remote-theme
   - jekyll-seo-tag
 
 # Exclude from processing.

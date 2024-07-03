@@ -1,0 +1,17 @@
+<div class="skills">
+    <h2>Tools</h2>
+    <div class="container">
+        {% assign tool = site.tools %}
+        {% for entry in tool %}
+        {% assign key = entry | first %}
+        <div class="card">
+            <div class="card-image">
+                <img src="/assets/img/{{ tool[key].image }}" alt="{{ tool[key].name }}">
+            </div>
+            <div class="card-title">
+                <h3>{{ tool[key].name }}</h3>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
