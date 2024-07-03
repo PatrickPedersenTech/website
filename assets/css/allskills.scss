@@ -1,0 +1,83 @@
+---
+---
+
+@import "shared";
+
+#skills {
+    height: auto;
+    min-height: 100vh;
+    background-color: darkslateblue ;
+}
+
+.container-fluid {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.filter-container {
+    margin: 0;
+    min-height: 80vh;
+}
+
+.filter-controls {
+    li {
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        line-height: 1;
+        margin: 5px 0;
+
+        &:hover {
+            background-color: #ff5722;
+            color: #fff;
+        }
+
+        &.active {
+            background-color: #ff5722;
+            color: #fff;
+        }
+    }
+}
+
+.filter-container {
+
+    @media screen and (max-width: 430px) {
+        justify-content: center;
+    }
+
+    .card {
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0.5rem;
+            border-radius: 15px;
+            color: #fff;
+            height: 12rem;
+            width: 12rem;
+            background-color: #222831;
+        }
+
+        .card-image {
+            width: 6rem;
+            height: 6rem;
+            margin: 1rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .card-title {
+            margin-top: 1rem;
+            
+            h3 {
+                margin: 0;
+            }
+        }
+    }
+}

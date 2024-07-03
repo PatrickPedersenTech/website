@@ -1,0 +1,14 @@
+{% assign skill = site.skills %}
+{% for entry in skill %}
+{% assign key = entry | first %}
+<div class="card border-0 bg-transparent filtr-item" data-category="{{ skill[key].category }}" data-sort="value">
+    <div class="container">
+        <div class="card-image">
+            <img src="/assets/img/{{ skill[key].image }}" alt="{{ skill[key].name }}">
+        </div>
+        <div class="card-title">
+            <h6 class="fw-bold">{{ skill[key].name }}</h3>
+        </div>
+    </div>
+</div>
+{% endfor %}

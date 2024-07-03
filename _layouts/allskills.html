@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  {% include head.html %}
+  <body>
+    <section id="skills">
+      <div class="container-fluid px-2">
+        {% include filters.html %}
+        <div class="filter-container px-3">
+           {% include skills.html %}
+        </div>
+      </div>
+    </section>
+    {% include scripts.html %}
+  </body>
+</html>
+  

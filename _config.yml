@@ -5,6 +5,11 @@ description: "Contemplating my next project...\nor maybe I should just finish th
 url: "https://patrickpedersen.tech"
 github_username: 'PatrickPedersen'
 
+# Sass settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
 # Socials
 social_links:
   github:
@@ -53,18 +58,9 @@ tools:
   nodejs:
     name: Node.js
     image: nodejs-color.svg
-  vscode:
-    name: Visual Studio Code
-    image: vscode-color.svg
-  pycharm:
-    name: PyCharm
-    image: pycharm-color.svg
-  intellij:
-    name: IntelliJ IDEA
-    image: intellijidea-color.svg
-  phpstorm:
-    name: PhpStorm
-    image: phpstorm-color.svg
+  fluxcd:
+    name: FluxCD
+    image: flux-color.svg
   sonarqube:
     name: SonarQube
     image: sonarqube-color.svg
@@ -107,6 +103,121 @@ platforms:
   archlinux:
     name: Arch Linux
     image: archlinux-color.svg
+
+# Skills
+skills:
+  typescript:
+    name: TypeScript
+    image: typescript-color.svg
+    category: "1"
+  python:
+    name: Python
+    image: python-color.svg
+    category: "1"
+  php:
+    name: PHP
+    image: php-color.svg
+    category: "1"
+  powershell:
+    name: PowerShell
+    image: powershell-color.svg
+    category: "1"
+  bash:
+    name: Bash
+    image: bash-color.svg
+    category: "1"
+  terraform:
+    name: Terraform
+    image: terraform-color.svg
+    category: "1"
+  git:
+    name: Git
+    image: git-color.svg
+    category: "2"
+  github:
+    name: GitHub
+    image: github-color.svg
+    category: "2"
+  github_actions:
+    name: GitHub Actions
+    image: githubactions-color.svg
+    category: "2"
+  azure_devops:
+    name: Azure DevOps
+    image: azuredevops-color.svg
+    category: "2"
+  nodejs:
+    name: Node.js
+    image: nodejs-color.svg
+    category: "2"
+  fluxcd:
+    name: FluxCD
+    image: flux-color.svg
+    category: "2"
+  vscode:
+    name: Visual Studio Code
+    image: vscode-color.svg
+    category: "2"
+  pycharm:
+    name: PyCharm
+    image: pycharm-color.svg
+    category: "2"
+  intellij:
+    name: IntelliJ IDEA
+    image: intellijidea-color.svg
+    category: "2"
+  phpstorm:
+    name: PhpStorm
+    image: phpstorm-color.svg
+    category: "2"
+  sonarqube:
+    name: SonarQube
+    image: sonarqube-color.svg
+    category: "2"
+  postman:
+    name: Postman
+    image: postman-color.svg
+    category: "2"
+  prometheus:
+    name: Prometheus
+    image: prometheus-color.svg
+    category: "3"
+  grafana:
+    name: Grafana
+    image: grafana-color.svg
+    category: "3"
+  loki:
+    name: Loki
+    image: loki-color.png
+    category: "3"
+  azure:
+    name: Microsoft Azure
+    image: azure-color.svg
+    category: "4"
+  windows:
+    name: Windows
+    image: windows-color.svg
+    category: "4"
+  docker:
+    name: Docker
+    image: docker-color.svg
+    category: "4"
+  kubernetes:
+    name: Kubernetes
+    image: kubernetes-color.svg
+    category: "4"
+  rockylinux:
+    name: Rocky Linux
+    image: rockylinux-color.svg
+    category: "4"
+  fedora:
+    name: Fedora
+    image: fedora-color.svg
+    category: "4"
+  archlinux:
+    name: Arch Linux
+    image: archlinux-color.svg
+    category: "4"
 
 # Build settings
 plugins:
