@@ -1,0 +1,31 @@
+---
+layout: base.njk
+title: 404
+permalink: 404.html
+---
+
+<div class="error-wrap">
+  <div class="error-code">404</div>
+  <div class="error-terminal">
+    <div class="line"><span class="t-prompt">patrick@infra:~$</span> <span class="t-cmd">curl -I https://patrickpedersen.tech<span id="reqPath"></span></span></div>
+    <div class="line"><span class="t-err">HTTP/2 404</span></div>
+    <div class="line"><span class="t-info">content-type: text/html</span></div>
+    <div class="line"><span class="t-info">server: cloudflare</span></div>
+    <div class="line">&nbsp;</div>
+    <div class="line"><span class="t-err">Error:</span> <span class="t-info">The requested resource was not found.</span></div>
+    <div class="line"><span class="t-prompt">patrick@infra:~$</span> <span class="cursor"></span></div>
+  </div>
+  <h1 class="error-heading">Page not found</h1>
+  <p class="error-sub">This path doesn't exist — it may have moved, or never existed at all.</p>
+  <div class="error-actions">
+    <a class="btn btn-primary" href="/">← Back to home</a>
+    <a class="btn btn-ghost" href="/#contact">Report an issue</a>
+  </div>
+</div>
+
+<script>
+  const path = window.location.pathname;
+  if (path && path !== '/404.html') {
+    document.getElementById('reqPath').textContent = path;
+  }
+</script>

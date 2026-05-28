@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }} · Patrick Pedersen</title>
+  <meta name="description" content="{{ description or 'Patrick Pedersen — Datatechnician specializing in Infrastructure & DevOps. Based in Denmark.' }}" />
+  <meta property="og:title" content="{{ pageTitle or 'Patrick Pedersen' }}" />
+  <meta property="og:description" content="{{ description or 'Datatechnician specializing in Infrastructure & DevOps. Based in Denmark.' }}" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Syne:wght@500;600;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  {% if extraCss %}<link rel="stylesheet" href="/assets/css/{{ extraCss }}">{% endif %}
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">pp@infra:~$</a>
+    <ul class="nav-links">
+      <li><a href="/#about">about</a></li>
+      <li><a href="/#skills">skills</a></li>
+      <li><a href="/#education">education</a></li>
+      <li><a href="/#experience">experience</a></li>
+      <li><a href="/#projects">projects</a></li>
+      <li><a href="/#contact">contact</a></li>
+    </ul>
+    <div class="lang-toggle">
+      <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" id="btn-da" onclick="setLang('da')">DA</button>
+    </div>
+  </nav>
+
+  {{ content | safe }}
+
+  <footer>
+    <p>Maintained by <a href="https://github.com/PatrickPedersenTech">PatrickPedersenTech</a> · Hosted on Cloudflare Pages</p>
+  </footer>
+
+  <script src="/assets/js/lang.js"></script>
+  <script src="/assets/js/nav.js"></script>
+  {% if extraJs %}<script src="/assets/js/{{ extraJs }}"></script>{% endif %}
+
+</body>
+</html>

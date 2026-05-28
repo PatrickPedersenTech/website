@@ -1,0 +1,38 @@
+[
+  {
+    "icon": "🔒",
+    "title": "Cloudflare SSL on IIS",
+    "description": "End-to-end SSL certificate deployment on Microsoft IIS using Cloudflare. Covers cert installation, HTTPS binding configuration, and HTTP-to-HTTPS redirect automation via PowerShell.",
+    "chips": ["Cloudflare", "IIS", "PowerShell", "Windows Server"]
+  },
+  {
+    "icon": "🚚",
+    "title": "Linux → Windows file migration",
+    "description": "Secure, automated file transfer from a Linux machine to a Windows Server IIS environment using SCP over OpenSSH. Part of a broader server migration workflow.",
+    "chips": ["Linux", "OpenSSH", "SCP", "Bash"]
+  },
+  {
+    "icon": "☸️",
+    "title": "GitOps with FluxCD",
+    "description": "Kubernetes cluster management using FluxCD for GitOps-driven deployments. Changes pushed to Git automatically reconcile with cluster state — no manual kubectl in prod.",
+    "chips": ["Kubernetes", "FluxCD", "GitHub", "YAML"]
+  },
+  {
+    "icon": "📊",
+    "title": "Monitoring stack",
+    "description": "Self-hosted observability stack using Prometheus, Grafana, and Loki. Covers metrics collection, log aggregation, and alerting — deployed in Docker with persistent storage.",
+    "chips": ["Grafana", "Prometheus", "Loki", "Docker"]
+  },
+  {
+    "icon": "⚙️",
+    "title": "CI/CD pipeline",
+    "description": "Automated build and deployment pipelines with GitHub Actions and Azure DevOps. Includes code quality gates via SonarQube and environment-specific deployment stages.",
+    "chips": ["GitHub Actions", "Azure DevOps", "SonarQube"]
+  },
+  {
+    "icon": "🌐",
+    "title": "This portfolio",
+    "description": "Static site built with Eleventy, hosted on Cloudflare Pages with a custom domain. Includes SSL configuration, DNS management, and bot protection rules via Cloudflare Workers.",
+    "chips": ["Eleventy", "Cloudflare Pages", "Cloudflare Workers", "DNS"]
+  }
+]

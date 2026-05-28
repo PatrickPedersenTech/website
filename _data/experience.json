@@ -1,0 +1,49 @@
+[
+  {
+    "period": "Jul 2023 – Jun 2026",
+    "title": {
+      "en": "Datatechnician",
+      "da": "Datatekniker"
+    },
+    "org": "DTU — Technical University of Denmark",
+    "location": "Kongens Lyngby",
+    "description": "In-house Datatechnician at one of Denmark's leading technical universities, supporting and maintaining IT infrastructure across the organization. Contract concluding June 2026.",
+    "chips": []
+  },
+  {
+    "period": "Jan 2022 – Jun 2023",
+    "title": {
+      "en": "IT Support Specialist",
+      "da": "IT-supporter"
+    },
+    "org": "DTU — Technical University of Denmark",
+    "location": "Kongens Lyngby",
+    "description": "Provided IT support across the university, resolving hardware, software, and network issues for staff and students. Progressed into the Datatekniker role after 1.5 years.",
+    "chips": []
+  },
+  {
+    "period": "Apr 2021 – present",
+    "tag": {
+      "en": "Volunteer",
+      "da": "Frivillig"
+    },
+    "title": {
+      "en": "Senior Administrator & Developer",
+      "da": "Senior Administrator & Udvikler"
+    },
+    "org": {
+      "en": "Black Widow Company · Veterans community",
+      "da": "Black Widow Company · Veteranfællesskab"
+    },
+    "description": "Primary administrator and developer for a veterans-focused online community. Responsible for the full infrastructure stack:",
+    "bullets": [
+      "Linux server administration and maintenance",
+      "Web hosting — websites and community forums",
+      "Database management",
+      "Mail server configuration and operation",
+      "Docker container deployment and management",
+      "Operations platform (OpServ) administration and development",
+      "Social platform integrations — Facebook, Twitter, YouTube, Twitch"
+    ]
+  }
+]
