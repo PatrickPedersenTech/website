@@ -141,6 +141,29 @@ footer a { color: var(--accent); text-decoration: none; }
   padding: 7rem 2rem 4rem;
 }
 
+/* ── NAV CV BUTTON ── */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.nav-cv-btn {
+  font-family: var(--mono);
+  font-size: 11px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+.nav-cv-btn:hover {
+  background: var(--accent);
+  color: #000;
+}
+
 /* ── LANG TOGGLE ── */
 .lang-toggle {
   display: flex;

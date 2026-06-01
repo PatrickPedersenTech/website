@@ -1,38 +1,100 @@
 [
   {
-    "icon": "🔒",
-    "title": "Cloudflare SSL on IIS",
-    "description": "End-to-end SSL certificate deployment on Microsoft IIS using Cloudflare. Covers cert installation, HTTPS binding configuration, and HTTP-to-HTTPS redirect automation via PowerShell.",
-    "chips": ["Cloudflare", "IIS", "PowerShell", "Windows Server"]
+    "category": "development",
+    "icon": "🖥️",
+    "title": "OpServ — Operations Server",
+    "description": "Full-stack web application built for Black Widow Company, a veterans community. Handles member and staff management, operation planning, game statistics, awards, and role assignments.",
+    "cv_description": "Full-stack web application built exclusively for Black Widow Company, a veterans community. Handles the full operational lifecycle — member and staff management, operation planning and execution, after-action reports, game statistics, awards, billet management, and role assignments. Built on PHP and MySQL with deep XenForo forum integration, designed and developed collaboratively.",
+    "chips": ["PHP", "MySQL", "XenForo", "jQuery"],
+    "link": null,
+    "collab": true
   },
   {
-    "icon": "🚚",
-    "title": "Linux → Windows file migration",
-    "description": "Secure, automated file transfer from a Linux machine to a Windows Server IIS environment using SCP over OpenSSH. Part of a broader server migration workflow.",
-    "chips": ["Linux", "OpenSSH", "SCP", "Bash"]
+    "category": "development",
+    "icon": "🤖",
+    "title": "OpServ Discord Bot",
+    "description": "Discord bot for Black Widow Company bridging OpServ and Discord. Handles account linking, operation notifications, server moderation, and live streaming detection.",
+    "cv_description": "Discord bot built solo for Black Widow Company that bridges the OpServ platform with Discord. Handles forum-to-Discord account linking, operation notifications, server moderation (lockdown, channel management), game announcement channels, and live streaming role assignment. Runs as a PM2-managed Node.js service with SSL termination, structured Winston logging, and an Express API layer.",
+    "chips": ["Node.js", "Discord.js", "MySQL", "Sequelize", "PM2", "Express"],
+    "link": "https://github.com/THE-BWC/Discord_OpServBot",
+    "collab": false
   },
   {
-    "icon": "☸️",
-    "title": "GitOps with FluxCD",
-    "description": "Kubernetes cluster management using FluxCD for GitOps-driven deployments. Changes pushed to Git automatically reconcile with cluster state — no manual kubectl in prod.",
-    "chips": ["Kubernetes", "FluxCD", "GitHub", "YAML"]
+    "category": "infrastructure",
+    "icon": "🏗️",
+    "title": "Azure Landing Zone Vending",
+    "description": "Contributed to an enterprise-scale Landing Zone platform at DTU. Subscriptions and Service Principals are vended via Terraform and Azure DevOps pipelines, covering full lifecycle management, VNET provisioning, and automated decommissioning.",
+    "cv_description": "Contributed to an enterprise-scale Landing Zone platform at DTU, built in collaboration with external consultants. The platform vends Azure subscriptions and Service Principals via Terraform and Azure DevOps pipelines, covering full subscription lifecycle management, VNET provisioning, RBAC role assignments, Key Vault secret creation, budget alerts, cost anomaly detection, service health alerts, and automated decommissioning. Key contributions:",
+    "cv_bullets": [
+      "Implemented the subscription consumption budget flow — covering budget creation, monthly time grain, threshold alerting, and notification recipients per subscription",
+      "Added mandatory tag validation that halts the Terraform pipeline with an error if required tags are missing from a subscription JSON file, preventing non-compliant subscriptions from being vended",
+      "Exposed landing zone subscription outputs keyed by subscription ID, enabling downstream vending modules such as Service Principal and VNET vending to reference provisioned subscriptions",
+      "Onboarded all existing Azure subscriptions into the automated vending flow, migrating manual infrastructure into the IaC pipeline and establishing a single source of truth for subscription state",
+      "Contributed to Service Principal Vending — automated SP creation with RBAC role assignments at management group, subscription, or resource scope, with credentials stored in Key Vault",
+      "Contributed to VNET Vending — automated virtual network provisioning as part of the subscription vending process, defined per-subscription in JSON"
+    ],
+    "chips": ["Terraform", "Azure DevOps", "Azure", "Blob Storage", "IaC"],
+    "link": null,
+    "collab": true
   },
   {
+    "category": "infrastructure",
+    "icon": "🔥",
+    "title": "Azure Firewall Rules & IP-Groups",
+    "description": "Terraform-based management of Azure Firewall Policy Rule Collection Groups and IP-Groups at DTU. Rules are defined as JSON files and applied via pipeline — no manual portal changes needed.",
+    "cv_description": "Terraform-based system for managing Azure Firewall Policy Rule Collection Groups and IP-Groups at DTU. Firewall rules and IP-Groups are defined as structured JSON files, allowing teams to manage network access control through pull requests rather than manual portal changes. Supports source and destination IP groups, FQDNs, and multi-protocol rule collections across priority-ordered collection groups.",
+    "chips": ["Terraform", "Azure DevOps", "Azure Firewall", "Azure", "IaC", "JSON"],
+    "link": null,
+    "collab": false
+  },
+  {
+    "category": "infrastructure",
+    "icon": "🔏",
+    "title": "Azure Policy Exemption Management",
+    "description": "Terraform-based system for managing Azure Policy exemptions at DTU. JSON files define exemptions at subscription, resource group, or resource scope — committed and applied automatically via pipeline.",
+    "cv_description": "Terraform-based system for managing Azure Policy exemptions at DTU. Exemptions are defined as JSON files named after the target subscription, supporting subscription, resource group, or resource-level scope. An Azure DevOps pipeline picks up new or changed JSON files and applies the exemptions via Terraform with state in Azure Blob Storage — removing the need for manual portal intervention and providing a full audit trail through Git history.",
+    "chips": ["Terraform", "Azure Policy", "Azure DevOps", "Blob Storage", "JSON"],
+    "link": null,
+    "collab": false
+  },
+  {
+    "category": "infrastructure",
+    "icon": "📧",
+    "title": "Azure Notification System",
+    "description": "Modular notification system at DTU built on Azure Communication Services, with automated pipelines for subscription expiration alerts and monthly VM CPU utilization reports.",
+    "cv_description": "Modular notification system built at DTU on Azure Communication Services. Authored a reusable Email Sender module consumed by two automated pipelines: a Subscription Expiration Notifier that queries the Azure Graph API monthly for subscriptions nearing expiry and sends alerts, and a VM CPU Utilization Notifier that compiles cross-subscription usage reports from Azure Monitor and mails them on the 1st of each month. CPU utilization module built by a colleague. All pipelines run on Azure DevOps with service principal authentication and publish JSON artifacts for record-keeping.",
+    "chips": ["Python", "Azure DevOps", "Azure Communication Services", "Azure Monitor", "Azure Graph API"],
+    "link": null,
+    "collab": true
+  },
+  {
+    "category": "infrastructure",
+    "icon": "🏠",
+    "title": "HomeLab — Ansible IaC",
+    "description": "Infrastructure-as-code for my homelab using Ansible. Playbook layering and orchestrator roles allow flexible per-host targeting across DNS, observability, and HA services.",
+    "cv_description": "Infrastructure-as-code for my personal homelab using Ansible. Structured with playbook layering, component roles, and orchestrator roles for flexible targeting — deploy only Grafana Alloy on one host, Alloy and Loki on another, or the full Docker stack across a group. Covers DNS (AdGuard + Unbound in Docker Compose), the Grafana observability stack (Alloy, Loki), and VRRP high availability via keepalived for DNS failover.",
+    "chips": ["Ansible", "Docker", "Grafana", "Loki", "AdGuard", "Keepalived", "VRRP"],
+    "link": "https://github.com/PatrickPedersenTech/Lab",
+    "collab": false
+  },
+  {
+    "category": "infrastructure",
     "icon": "📊",
     "title": "Monitoring stack",
     "description": "Self-hosted observability stack using Prometheus, Grafana, and Loki. Covers metrics collection, log aggregation, and alerting — deployed in Docker with persistent storage.",
-    "chips": ["Grafana", "Prometheus", "Loki", "Docker"]
+    "cv_description": "Self-hosted observability stack using Prometheus for metrics collection, Grafana for dashboards and alerting, and Loki for log aggregation. Deployed in Docker with persistent storage volumes and configured alert rules for service health monitoring.",
+    "chips": ["Grafana", "Prometheus", "Loki", "Docker"],
+    "link": null,
+    "collab": false
   },
   {
-    "icon": "⚙️",
-    "title": "CI/CD pipeline",
-    "description": "Automated build and deployment pipelines with GitHub Actions and Azure DevOps. Includes code quality gates via SonarQube and environment-specific deployment stages.",
-    "chips": ["GitHub Actions", "Azure DevOps", "SonarQube"]
-  },
-  {
+    "category": "development",
     "icon": "🌐",
     "title": "This portfolio",
-    "description": "Static site built with Eleventy, hosted on Cloudflare Pages with a custom domain. Includes SSL configuration, DNS management, and bot protection rules via Cloudflare Workers.",
-    "chips": ["Eleventy", "Cloudflare Pages", "Cloudflare Workers", "DNS"]
+    "description": "Static site built with Eleventy, hosted on Cloudflare Pages with a custom domain, DNS management, and bot protection via Cloudflare Workers.",
+    "cv_description": "Personal portfolio site built with Eleventy (static site generator) and hosted on Cloudflare Pages. Features a shared Nunjucks layout, JSON-driven data files for skills, experience, education, and projects, vanilla JS language toggle (EN/DA), scroll-aware nav highlighting, and a filterable skills page. DNS managed via Cloudflare with Full Strict SSL and Workers-based bot protection.",
+    "chips": ["Eleventy", "Cloudflare Pages", "Cloudflare Workers", "DNS"],
+    "link": null,
+    "collab": false
   }
 ]

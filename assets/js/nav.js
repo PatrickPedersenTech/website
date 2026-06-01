@@ -1,6 +1,7 @@
 // Highlight nav links based on current page and scroll position
+// Excludes the CV pill button from scroll spy
 
-const navLinks = document.querySelectorAll('.nav-links a');
+const navLinks = Array.from(document.querySelectorAll('.nav-links a'));
 
 function setActive(id) {
   navLinks.forEach(link => {

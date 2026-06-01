@@ -6,6 +6,16 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("assets/css/");
   eleventyConfig.addWatchTarget("assets/js/");
 
+  // Filter to select items from an array where a key matches a value
+  // Usage: collection | selectattr("key", "equalto", "value")
+  eleventyConfig.addFilter("selectattr", function (arr, key, operator, value) {
+    if (!Array.isArray(arr)) return [];
+    if (operator === "equalto") {
+      return arr.filter(item => item[key] === value);
+    }
+    return arr;
+  });
+
   return {
     dir: {
       input: ".",

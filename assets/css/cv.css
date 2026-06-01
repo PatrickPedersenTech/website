@@ -87,6 +87,19 @@
 .entry-desc li { margin-bottom: 3px; }
 .entry-chips { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
 
+.cv-project-group { margin-bottom: 1.5rem; }
+.cv-project-group:last-child { margin-bottom: 0; }
+.cv-project-group-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border);
+}
+
 /* ── PRINT BAR ── */
 .print-bar {
   display: flex; align-items: center; justify-content: space-between;

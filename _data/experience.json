@@ -1,25 +1,50 @@
 [
   {
-    "period": "Jul 2023 – Jun 2026",
+    "period": "Jan 2023 – Jun 2026",
     "title": {
       "en": "Datatechnician",
       "da": "Datatekniker"
     },
     "org": "DTU — Technical University of Denmark",
     "location": "Kongens Lyngby",
-    "description": "In-house Datatechnician at one of Denmark's leading technical universities, supporting and maintaining IT infrastructure across the organization. Contract concluding June 2026.",
-    "chips": []
+    "description": "Rotated across six specialist teams over 3.5 years, gaining broad hands-on experience across cloud platforms, enterprise infrastructure, networking, identity, and IT security.",
+    "cv_bullets": [
+      "Mail & Azure Team (1.5 years) — Administered the full Office 365 platform including Teams, OneDrive, Exchange Online, and on-prem Exchange. Handled SharePoint admin work in the context of Teams. Involved in Azure administration and development, contributing to Landing Zone Vending, Service Principal Vending, VNET Vending, Firewall Rules management, Policy Exemption management, and an Azure Notification System built on Azure Communication Services",
+      "LABIT — Laboratory IT (1 year) — Supported laboratory IT systems across the university. Introduced to Ceph distributed storage and OpenNebula hypervisor for managing lab compute infrastructure",
+      "Active Directory Team (6 months) — Maintained Active Directory and internal PKI infrastructure. Handled routine certificate issuance, key rotation, scheduled backups, and LAPS key recovery for data retrieval tasks",
+      "Networking Team (6 months) — Worked with Cisco ISE and Cisco DNA Center for automated deployment of new networking equipment. Handled on-site networking tasks including troubleshooting broken links and cabling up new equipment. Led development of a new platform for the device network (95% complete at rotation)",
+      "IT Security Team (6 months) — Audited and triaged all Azure Sentinel analytics rules, identifying and removing unused rules. Investigated abnormally high Sentinel log ingestion costs — identified the root cause and collaborated with the AD Team to overhaul the log ingestion pipeline, reducing daily ingest from ~80 GB to ~10 GB. Involved in MAM policy work, tiering projects, and an ongoing Power BI reporting project based on Sentinel log analytics data"
+    ],
+    "chips": [
+      "Azure",
+      "Office 365",
+      "Exchange",
+      "Active Directory",
+      "PKI",
+      "Cisco ISE",
+      "Cisco DNA Center",
+      "Ceph",
+      "OpenNebula",
+      "Azure Sentinel",
+      "Terraform",
+      "Power BI"
+    ]
   },
   {
-    "period": "Jan 2022 – Jun 2023",
+    "period": "Jan 2022 – Jan 2023",
     "title": {
       "en": "IT Support Specialist",
       "da": "IT-supporter"
     },
     "org": "DTU — Technical University of Denmark",
     "location": "Kongens Lyngby",
-    "description": "Provided IT support across the university, resolving hardware, software, and network issues for staff and students. Progressed into the Datatekniker role after 1.5 years.",
-    "chips": []
+    "description": "1st tier helpdesk support for staff and students across the university. Resolved hardware, software, and network issues, and provided on-site technical support during DTU exams. Progressed into the Datatechnician role after 1 year.",
+    "chips": [
+      "Helpdesk",
+      "Windows",
+      "Office 365",
+      "Hardware"
+    ]
   },
   {
     "period": "Apr 2021 – present",
@@ -35,15 +60,14 @@
       "en": "Black Widow Company · Veterans community",
       "da": "Black Widow Company · Veteranfællesskab"
     },
-    "description": "Primary administrator and developer for a veterans-focused online community. Responsible for the full infrastructure stack:",
-    "bullets": [
-      "Linux server administration and maintenance",
-      "Web hosting — websites and community forums",
-      "Database management",
-      "Mail server configuration and operation",
-      "Docker container deployment and management",
-      "Operations platform (OpServ) administration and development",
-      "Social platform integrations — Facebook, Twitter, YouTube, Twitch"
+    "description": "Primary administrator and developer for a veterans-focused online community. Responsible for the full infrastructure stack including websites, forums, databases, Linux servers, mail, Docker containers, an operations platform (OpServ), and social media integrations across Facebook, Twitter, YouTube, and Twitch.",
+    "chips": [
+      "Linux",
+      "Docker",
+      "Web hosting",
+      "Mail server",
+      "Databases",
+      "OpServ"
     ]
   }
 ]

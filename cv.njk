@@ -46,7 +46,7 @@ extraCss: cv.css
       <div class="sidebar-section">
         <div class="sidebar-label">Core skills</div>
         <div class="sidebar-chips">
-          {% for s in ["Linux","Azure","Kubernetes","Docker","Terraform","CI/CD","PowerShell","Bash","Cloudflare","GitHub Actions"] %}
+          {% for s in ["Linux","Azure","Docker","Terraform","CI/CD","PowerShell","Bash","Cloudflare","GitHub Actions"] %}
             <span class="sidebar-chip">{{ s }}</span>
           {% endfor %}
         </div>
@@ -131,9 +131,9 @@ extraCss: cv.css
             </div>
             <div class="entry-desc">
               {{ item.description }}
-              {% if item.bullets and item.bullets.length %}
+              {% if item.cv_bullets and item.cv_bullets.length %}
                 <ul>
-                  {% for bullet in item.bullets %}
+                  {% for bullet in item.cv_bullets %}
                     <li>{{ bullet }}</li>
                   {% endfor %}
                 </ul>
@@ -152,27 +152,52 @@ extraCss: cv.css
 
       <div class="cv-section">
         <div class="cv-section-title">Selected projects</div>
-        {% for project in projects %}
-          <div class="cv-entry">
-            <div class="entry-header">
-              <div class="entry-title">{{ project.title }}</div>
-            </div>
-            <div class="entry-desc">{{ project.description }}</div>
-            <div class="entry-chips">
-              {% for chip in project.chips %}
-                <span class="chip">{{ chip }}</span>
-              {% endfor %}
-            </div>
+        {% set devProjects   = projects | selectattr("category", "equalto", "development")     | list %}
+        {% set infraProjects = projects | selectattr("category", "equalto", "infrastructure")  | list %}
+        {% for group in [
+          { "label": "Development",            "items": devProjects },
+          { "label": "Infrastructure & DevOps","items": infraProjects }
+        ] %}
+          <div class="cv-project-group">
+            <div class="cv-project-group-label">{{ group.label }}</div>
+            {% for project in group.items %}
+              <div class="cv-entry">
+                <div class="entry-header">
+                  <div class="entry-title">
+                    {{ project.title }}
+                    {% if project.collab %}<span style="font-size:10px; font-family:var(--mono); color:var(--muted); font-weight:400; margin-left:6px;">collaborative</span>{% endif %}
+                  </div>
+                  {% if project.link %}
+                    <a href="{{ project.link }}" target="_blank" rel="noopener" style="font-family:var(--mono); font-size:11px; color:var(--accent); text-decoration:none; white-space:nowrap; flex-shrink:0;">GitHub ↗</a>
+                  {% endif %}
+                </div>
+                <div class="entry-desc">
+                  {{ project.cv_description or project.description }}
+                  {% if project.cv_bullets and project.cv_bullets.length %}
+                    <ul>
+                      {% for bullet in project.cv_bullets %}
+                        <li>{{ bullet }}</li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+                </div>
+                <div class="entry-chips">
+                  {% for chip in project.chips %}
+                    <span class="chip">{{ chip }}</span>
+                  {% endfor %}
+                </div>
+              </div>
+            {% endfor %}
           </div>
         {% endfor %}
       </div>
 
-      <div class="cv-section">
+      {# <div class="cv-section">
         <div class="cv-section-title">Certifications</div>
         <div class="cv-entry" style="border-bottom:none; padding-bottom:0; margin-bottom:0;">
           <p class="entry-desc" style="color:var(--muted); font-style:italic;">Add certifications here — e.g. AZ-900 Azure Fundamentals, CompTIA Network+</p>
         </div>
-      </div>
+      </div> #}
 
     </main>
   </div>
