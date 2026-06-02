@@ -94,7 +94,7 @@
     "description": "Static site built with Eleventy, hosted on Cloudflare Pages with a custom domain, DNS management, and bot protection via Cloudflare Workers.",
     "cv_description": "Personal portfolio site built with Eleventy (static site generator) and hosted on Cloudflare Pages. Features a shared Nunjucks layout, JSON-driven data files for skills, experience, education, and projects, vanilla JS language toggle (EN/DA), scroll-aware nav highlighting, and a filterable skills page. DNS managed via Cloudflare with Full Strict SSL and Workers-based bot protection.",
     "chips": ["Eleventy", "Cloudflare Pages", "Cloudflare Workers", "DNS"],
-    "link": null,
+    "link": "https://github.com/PatrickPedersenTech/website",
     "collab": false
   }
 ]
