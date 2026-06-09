@@ -44,7 +44,6 @@ Built with [Eleventy](https://www.11ty.dev/) and hosted on [Cloudflare Pages](ht
 │   │   ├── allskills.css # Skills page styles
 │   │   └── cv.css       # CV page styles and print styles
 │   ├── js/
-│   │   ├── lang.js      # EN/DA language toggle
 │   │   ├── nav.js       # Scroll-aware nav highlighting + hamburger
 │   │   └── skills-filter.js # Skills filter and search
 │   └── img/             # Skill icons (SVG/PNG)

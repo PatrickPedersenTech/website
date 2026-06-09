@@ -77,15 +77,13 @@ extraCss: cv.css
           <div class="cv-entry">
             <div class="entry-header">
               <div class="entry-title">
-                <span class="lang-en">{{ item.title.en }}</span>
-                <span class="lang-da">{{ item.title.da }}</span>
+                <span>{{ item.title }}</span>
               </div>
               <div class="entry-date">{{ item.period }}</div>
             </div>
             <div class="entry-org">
               {% if item.org.en %}
-                <span class="lang-en">{{ item.org.en }}</span>
-                <span class="lang-da">{{ item.org.da }}</span>
+                <span>{{ item.org }}</span>
               {% else %}
                 {{ item.org }}
               {% endif %}
@@ -110,21 +108,18 @@ extraCss: cv.css
           <div class="cv-entry">
             <div class="entry-header">
               <div class="entry-title">
-                <span class="lang-en">{{ item.title.en }}</span>
-                <span class="lang-da">{{ item.title.da }}</span>
+                <span>{{ item.title }}</span>
               </div>
               <div class="entry-date">
                 {{ item.period }}
                 {% if item.tag %}·
-                  <span class="lang-en">{{ item.tag.en }}</span>
-                  <span class="lang-da">{{ item.tag.da }}</span>
+                  <span>{{ item.tag }}</span>
                 {% endif %}
               </div>
             </div>
             <div class="entry-org">
               {% if item.org.en %}
-                <span class="lang-en">{{ item.org.en }}</span>
-                <span class="lang-da">{{ item.org.da }}</span>
+                <span>{{ item.org }}</span>
               {% else %}
                 {{ item.org }}{% if item.location %} · {{ item.location }}{% endif %}
               {% endif %}

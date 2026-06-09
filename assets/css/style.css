@@ -164,41 +164,6 @@ footer a { color: var(--accent); text-decoration: none; }
   color: #000;
 }
 
-/* ── LANG TOGGLE ── */
-.lang-toggle {
-  display: flex;
-  align-items: center;
-  gap: 2px;
-  background: var(--bg2);
-  border: 1px solid var(--border2);
-  border-radius: 6px;
-  padding: 2px;
-  flex-shrink: 0;
-}
-.lang-btn {
-  font-family: var(--mono);
-  font-size: 11px;
-  padding: 3px 8px;
-  border-radius: 4px;
-  border: none;
-  background: transparent;
-  color: var(--muted);
-  cursor: pointer;
-  transition: all 0.15s;
-  line-height: 1;
-}
-.lang-btn.active {
-  background: var(--accent);
-  color: #000;
-}
-
-/* bilingual text — show/hide based on body class */
-.lang-da { display: none; }
-.lang-en { display: inline; }
-
-body.danish .lang-da { display: inline; }
-body.danish .lang-en { display: none; }
-
 /* ── RESPONSIVE NAV ── */
 @media (max-width: 768px) {
   .nav-links {
@@ -247,7 +212,6 @@ body.danish .lang-en { display: none; }
   .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
   .nav-actions { gap: 8px; }
-  .lang-toggle { display: none; }
 }
 
 @media (min-width: 769px) {
