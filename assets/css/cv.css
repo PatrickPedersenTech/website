@@ -10,7 +10,39 @@
   gap: 2.5rem;
   align-items: start;
 }
-@media (max-width: 700px) { .cv-layout { grid-template-columns: 1fr; } }
+
+.cv-sidebar {
+  position: sticky;
+  top: 6rem;
+}
+
+@media (max-width: 768px) {
+  .page-content { padding: 5rem 1.25rem 3rem; }
+
+  .cv-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .cv-sidebar {
+    position: static !important;
+    top: auto !important;
+    width: 100%;
+  }
+
+  .cv-main {
+    width: 100%;
+  }
+
+  .cv-avatar { width: 52px; height: 52px; font-size: 18px; }
+  .cv-name { font-size: 1.2rem; }
+
+  .entry-header { flex-direction: column; gap: 2px; }
+  .entry-date { white-space: normal; }
+
+  .print-bar { flex-direction: column; align-items: flex-start; }
+}
 
 /* ── SIDEBAR ── */
 .cv-sidebar { position: sticky; top: 6rem; }

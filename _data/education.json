@@ -1,14 +1,8 @@
 [
   {
     "period": "2021 – 2026",
-    "title": {
-      "en": "Datatechnician — Infrastructure specialization",
-      "da": "Datatekniker — Speciale I Infrastruktur"
-    },
-    "org": {
-      "en": "TEC — Technical Education Copenhagen · Graduated May 2026",
-      "da": "TEC — Technical Education Copenhagen · Dimitteret maj 2026"
-    },
+    "title": "Datatechnician — Infrastructure specialization",
+    "org": "TEC — Technical Education Copenhagen · Graduated May 2026",
     "description": "Vocational education specializing in network and system administration. Core subjects included:",
     "bullets": [
       "Server administration — Linux and Windows Server environments",
@@ -22,26 +16,14 @@
   },
   {
     "period": "2021",
-    "title": {
-      "en": "Datatechnician — Infrastructure (foundation)",
-      "da": "Datatekniker — Speciale I Infrastruktur (GF2)"
-    },
-    "org": {
-      "en": "Roskilde Tekniske Skole",
-      "da": "Roskilde Tekniske Skole"
-    },
+    "title": "Datatechnician — Infrastructure (foundation)",
+    "org": "Roskilde Tekniske Skole",
     "description": "Foundation course in network and system administration, preceding the main programme at TEC."
   },
   {
     "period": "2018 – 2021",
-    "title": {
-      "en": "Digital Communication & Multimedia",
-      "da": "Digital kommunikation og -medier/multimedier"
-    },
-    "org": {
-      "en": "Slotshaven Gymnasium",
-      "da": "Slotshaven Gymnasium"
-    },
+    "title": "Digital Communication & Multimedia",
+    "org": "Slotshaven Gymnasium",
     "description": "Upper secondary education with a focus on digital communication, media, and multimedia production."
   }
 ]

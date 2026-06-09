@@ -288,3 +288,15 @@ section {
 }
 .contact-bar p { color: var(--muted); font-size: 14px; }
 .contact-links { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  #hero { padding: 6rem 1.25rem 3rem; }
+  section { padding: 3rem 1.25rem; }
+  .hero-actions { flex-direction: column; }
+  .hero-actions .btn { width: 100%; justify-content: center; }
+  .contact-bar { flex-direction: column; }
+  .contact-links { flex-direction: column; width: 100%; }
+  .contact-links .btn { width: 100%; justify-content: center; }
+  .projects-grid { grid-template-columns: 1fr; }
+}

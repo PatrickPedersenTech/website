@@ -1,18 +1,15 @@
 <div class="timeline-item">
   <div class="tl-year">
     {{ item.period }}{% if item.tag %} ·
-      <span class="lang-en">{{ item.tag.en }}</span>
-      <span class="lang-da">{{ item.tag.da }}</span>
+      <span class="lang-en">{{ item.tag }}</span>
     {% endif %}
   </div>
   <div class="tl-title">
-    <span class="lang-en">{{ item.title.en }}</span>
-    <span class="lang-da">{{ item.title.da }}</span>
+    <span class="lang-en">{{ item.title }}</span>
   </div>
   <div class="tl-org">
-    {% if item.org.en %}
-      <span class="lang-en">{{ item.org.en }}</span>
-      <span class="lang-da">{{ item.org.da }}</span>
+    {% if item.org %}
+      <span class="lang-en">{{ item.org }}</span>
     {% else %}
       {{ item.org }}{% if item.location %} · {{ item.location }}{% endif %}
     {% endif %}
