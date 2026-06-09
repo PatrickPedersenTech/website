@@ -155,5 +155,16 @@
   }
   .page-content { padding-top: 1.5rem; }
   .cv-sidebar { position: static; }
-  .cv-entry { break-inside: avoid; }
+
+  /* Allow entries to break across pages — only protect header from orphaning */
+  .cv-entry { break-inside: auto; }
+  .cv-entry-header { break-after: avoid; }
+  .cv-entry-title { break-after: avoid; }
+
+  /* Keep section titles with their first entry */
+  .cv-section-title { break-after: avoid; }
+
+  /* Allow lists to break freely */
+  .cv-entry-desc ul { break-inside: auto; }
+  .cv-entry-desc li { break-inside: avoid; }
 }
