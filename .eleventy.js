@@ -16,6 +16,13 @@ module.exports = function (eleventyConfig) {
     return arr;
   });
 
+  // Filter to extract a property from each item in an array
+  // Usage: collection | map("name")
+  eleventyConfig.addFilter("map", function (arr, key) {
+    if (!Array.isArray(arr)) return [];
+    return arr.map(item => item[key]);
+  });
+
   return {
     dir: {
       input: ".",
@@ -23,7 +30,6 @@ module.exports = function (eleventyConfig) {
       data: "_data",
       output: "_site",
     },
-    // Use Nunjucks for all template files
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     templateFormats: ["njk", "html", "md"],

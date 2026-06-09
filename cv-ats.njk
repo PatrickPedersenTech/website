@@ -1,0 +1,312 @@
+---
+layout: base.njk
+title: CV (ATS)
+permalink: cv-ats/index.html
+---
+
+<style>
+  /* ── ATS CV — clean single-column, print-first ── */
+  .ats-wrap {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 7rem 2rem 4rem;
+    font-family: var(--sans);
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text);
+  }
+
+  .ats-notice {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .ats-lang-section {
+    margin-bottom: 3rem;
+  }
+
+  .ats-lang-divider {
+    text-align: center;
+    position: relative;
+    margin: 3rem 0;
+  }
+  .ats-lang-divider::before {
+    content: '';
+    position: absolute;
+    left: 0; right: 0; top: 50%;
+    height: 1px;
+    background: var(--border2);
+  }
+  .ats-lang-divider span {
+    position: relative;
+    background: var(--bg);
+    padding: 0 1rem;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  /* header */
+  .ats-header { margin-bottom: 1.5rem; }
+  .ats-header h1 {
+    font-family: var(--display);
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 4px;
+  }
+  .ats-header .ats-role {
+    font-size: 15px;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+  }
+  .ats-header .ats-contact {
+    font-size: 13px;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+  }
+  .ats-header .ats-contact a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+
+  /* sections */
+  .ats-section { margin-bottom: 1.75rem; }
+  .ats-section-title {
+    font-size: 11px;
+    font-family: var(--mono);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--border2);
+    margin-bottom: 1rem;
+  }
+
+  /* entries */
+  .ats-entry { margin-bottom: 1.25rem; }
+  .ats-entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin-bottom: 2px;
+  }
+  .ats-entry-title {
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+  }
+  .ats-entry-date {
+    font-size: 12px;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .ats-entry-org {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+  .ats-entry-desc {
+    font-size: 13px;
+    color: #c9d1d9;
+    line-height: 1.7;
+  }
+  .ats-entry-desc ul {
+    padding-left: 1.25rem;
+    margin-top: 4px;
+  }
+  .ats-entry-desc li { margin-bottom: 3px; }
+
+  /* skills — comma-separated plain text per category */
+  .ats-skills-row { margin-bottom: 6px; font-size: 13px; }
+  .ats-skills-row strong { color: var(--text); margin-right: 6px; }
+  .ats-skills-row span { color: var(--muted); }
+
+  /* print */
+  @media print {
+    nav, .ats-notice, footer { display: none !important; }
+    body { background: #fff; color: #111; }
+    :root {
+      --bg: #fff; --bg2: #f6f8fa; --bg3: #eef0f2;
+      --border: #e0e0e0; --border2: #ccc;
+      --text: #111; --muted: #444; --accent: #1a7a3e;
+    }
+    .ats-wrap { padding-top: 1.5rem; }
+
+    /* Allow entries to break across pages — only protect header from orphaning */
+    .ats-entry { break-inside: auto; }
+    .ats-entry-header { break-after: avoid; }
+    .ats-entry-title { break-after: avoid; }
+
+    /* Keep section titles with their first entry */
+    .ats-section-title { break-after: avoid; }
+
+    /* Allow lists to break freely */
+    .ats-entry-desc ul { break-inside: auto; }
+    .ats-entry-desc li { break-inside: avoid; }
+  }
+
+  @media (max-width: 768px) {
+    .ats-wrap { padding: 5rem 1.25rem 3rem; }
+    .ats-entry-header { flex-direction: column; }
+  }
+</style>
+
+<div class="ats-wrap">
+
+  <div class="ats-notice">
+    <span>ATS-optimised version — single column, keyword-rich, print-friendly.</span>
+    <button class="btn btn-ghost btn-sm" onclick="window.print()">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+      Print / Save as PDF
+    </button>
+  </div>
+
+  {# ── ENGLISH ── #}
+  <div class="ats-lang-section">
+
+    <div class="ats-header">
+      <h1>Patrick Pedersen</h1>
+      <div class="ats-role">Datatechnician — Infrastructure &amp; DevOps</div>
+      <div class="ats-contact">
+        <a href="https://www.linkedin.com/in/patrick-j-s-pedersen/">linkedin.com/in/patrick-j-s-pedersen</a>
+        <a href="https://github.com/PatrickPedersen">github.com/PatrickPedersen</a>
+        <a href="https://patrickpedersen.tech">patrickpedersen.tech</a>
+        <span>Denmark</span>
+      </div>
+    </div>
+
+    <div class="ats-section">
+      <div class="ats-section-title">Profile</div>
+      <div class="ats-entry-desc">
+        Freshly graduated Datatechnician with a specialization in Infrastructure, looking for a role in SysAdmin, DevOps, or platform engineering. Hands-on across both Linux and Windows Server environments, comfortable in the cloud and on-prem, and focused on building systems that are reliable, automated, and maintainable. Over 4 years of professional experience at DTU — Technical University of Denmark, spanning helpdesk, cloud administration, laboratory IT, networking, Active Directory, and IT security.
+      </div>
+    </div>
+
+    <div class="ats-section">
+      <div class="ats-section-title">Experience</div>
+      {% for item in experience %}
+        <div class="ats-entry">
+          <div class="ats-entry-header">
+            <span class="ats-entry-title">{{ item.title or item.title }}</span>
+            <span class="ats-entry-date">{{ item.period }}{% if item.tag %} — {{ item.tag }}{% endif %}</span>
+          </div>
+          <div class="ats-entry-org">
+            {% if item.org %}{{ item.org }}{% else %}{{ item.org }}{% endif %}
+            {% if item.location %} · {{ item.location }}{% endif %}
+          </div>
+          <div class="ats-entry-desc">
+            {{ item.description }}
+            {% if item.cv_bullets and item.cv_bullets.length %}
+              <ul>
+                {% for bullet in item.cv_bullets %}
+                  <li>{{ bullet }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+            {% if item.chips and item.chips.length %}
+              <p style="margin-top:4px; color:var(--muted); font-size:12px;">
+                Keywords: {{ item.chips | join(", ") }}
+              </p>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="ats-section">
+      <div class="ats-section-title">Education</div>
+      {% for item in education %}
+        <div class="ats-entry">
+          <div class="ats-entry-header">
+            <span class="ats-entry-title">{{ item.title or item.title }}</span>
+            <span class="ats-entry-date">{{ item.period }}</span>
+          </div>
+          <div class="ats-entry-org">
+            {% if item.org %}{{ item.org }}{% else %}{{ item.org }}{% endif %}
+          </div>
+          {% if item.description %}
+            <div class="ats-entry-desc">
+              {{ item.description }}
+              {% if item.bullets and item.bullets.length %}
+                <ul>
+                  {% for bullet in item.bullets %}
+                    <li>{{ bullet }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="ats-section">
+      <div class="ats-section-title">Skills</div>
+      {% set cats = [
+        { "id": "languages",  "label": "Languages & Scripting" },
+        { "id": "platforms",  "label": "Platforms & OS" },
+        { "id": "tools",      "label": "Tools & CI/CD" },
+        { "id": "monitoring", "label": "Monitoring & Observability" }
+      ] %}
+      {% for cat in cats %}
+        {% set filtered = skills | selectattr("category", "equalto", cat.id) | list %}
+        <div class="ats-skills-row">
+          <strong>{{ cat.label }}:</strong>
+          <span>{{ filtered | map("name") | join(", ") }}</span>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="ats-section">
+      <div class="ats-section-title">Selected Projects</div>
+      {% for project in projects %}
+        <div class="ats-entry">
+          <div class="ats-entry-header">
+            <span class="ats-entry-title">{{ project.title }}</span>
+            {% if project.link %}
+              <a href="{{ project.link }}" style="font-size:12px; color:var(--accent);">GitHub ↗</a>
+            {% endif %}
+          </div>
+          <div class="ats-entry-desc">
+            {{ project.cv_description or project.description }}
+            {% if project.cv_bullets and project.cv_bullets.length %}
+              <ul>
+                {% for bullet in project.cv_bullets %}
+                  <li>{{ bullet }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+            <p style="margin-top:4px; color:var(--muted); font-size:12px;">
+              Keywords: {{ project.chips | join(", ") }}
+            </p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="ats-section">
+      <div class="ats-section-title">Languages</div>
+      <div class="ats-skills-row"><strong>Danish:</strong> <span>Native</span></div>
+      <div class="ats-skills-row"><strong>English:</strong> <span>Fluent</span></div>
+    </div>
+
+  </div>
+</div>
