@@ -1,0 +1,29 @@
+[
+  {
+    "period": "2021 – 2026",
+    "title": "Datatechnician — Infrastructure specialization",
+    "org": "TEC — Technical Education Copenhagen · Graduated May 2026",
+    "description": "Vocational education specializing in network and system administration. Core subjects included:",
+    "bullets": [
+      "Server administration — Linux and Windows Server environments",
+      "Networking — TCP/IP, DNS, DHCP, VLANs, Firewalls, Load balancing, OSPF",
+      "Virtualization and containerization — Proxmox, Docker, Kubernetes",
+      "Storage — RAID, LVM, NFS, Ceph",
+      "Automation and scripting — PowerShell, Bash",
+      "Identity and access management — LDAP, Active Directory",
+      "Monitoring and observability — Graylog, Syslog, Zabbix"
+    ]
+  },
+  {
+    "period": "2021",
+    "title": "Datatechnician — Infrastructure (foundation)",
+    "org": "Roskilde Tekniske Skole",
+    "description": "Foundation course in network and system administration, preceding the main programme at TEC."
+  },
+  {
+    "period": "2018 – 2021",
+    "title": "Digital Communication & Multimedia",
+    "org": "Slotshaven Gymnasium",
+    "description": "Upper secondary education with a focus on digital communication, media, and multimedia production."
+  }
+]

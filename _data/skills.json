@@ -1,0 +1,34 @@
+[
+  { "name": "PowerShell", "img": "powershell-color.svg", "category": "languages" },
+  { "name": "Bash",       "img": "bash-color.svg",       "category": "languages" },
+  { "name": "Python",     "img": "python-color.svg",     "category": "languages" },
+  { "name": "Terraform",  "img": "terraform-color.svg",  "category": "languages" },
+  { "name": "TypeScript", "img": "typescript-color.svg", "category": "languages" },
+  { "name": "PHP",        "img": "php-color.svg",        "category": "languages" },
+  { "name": "JavaScript", "img": "javascript-color.svg", "category": "languages" },
+
+  { "name": "Git",           "img": "git-color.svg",           "category": "tools" },
+  { "name": "GitHub",        "img": "github-color.svg",        "category": "tools" },
+  { "name": "GitHub Actions","img": "githubactions-color.svg", "category": "tools" },
+  { "name": "Azure DevOps",  "img": "azuredevops-color.svg",   "category": "tools" },
+  { "name": "Node.js",       "img": "nodejs-color.svg",        "category": "tools" },
+  { "name": "Postman",       "img": "postman-color.svg",       "category": "tools" },
+
+  { "name": "Azure",        "img": "azure-color.svg",      "category": "platforms" },
+  { "name": "Cloudflare",   "img": "cloudflare-color.svg", "category": "platforms" },
+  { "name": "Docker",       "img": "docker-color.svg",     "category": "platforms" },
+  { "name": "Kubernetes",   "img": "kubernetes-color.svg", "category": "platforms" },
+  { "name": "Rocky Linux",  "img": "rockylinux-color.svg", "category": "platforms" },
+  { "name": "Fedora",       "img": "fedora-color.svg",     "category": "platforms" },
+  { "name": "Arch Linux",   "img": "archlinux-color.svg",  "category": "platforms" },
+
+  { "name": "Grafana",    "img": "grafana-color.svg",    "category": "monitoring" },
+  { "name": "Prometheus", "img": "prometheus-color.svg", "category": "monitoring" },
+  { "name": "Loki",       "img": "loki-color.png",       "category": "monitoring" },
+  { "name": "Gatus",       "img": "gatus-color.svg",       "category": "monitoring" },
+
+  { "name": "Nginx",       "img": "nginx-color.svg",       "category": "webservers" },
+
+  { "name": "MySQL",       "img": "mysql-color.svg",       "category": "databases" },
+  { "name": "PostgreSQL",  "img": "postgresql-color.svg",  "category": "databases" }
+]
