@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /cv-ats/
+
+Sitemap: https://patrickpedersen.tech/sitemap.xml
